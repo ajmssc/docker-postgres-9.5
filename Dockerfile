@@ -23,7 +23,7 @@ RUN apt-get install -qq -y postgresql-9.5 \
 
 
 
-##ADD postgresql.conf /etc/postgresql/9.5/main/postgresql.conf
+ADD postgresql.conf /etc/postgresql/9.5/main/postgresql.conf
 ADD pg_hba.conf /etc/postgresql/9.5/main/pg_hba.conf
 RUN chown postgres:postgres /etc/postgresql/9.5/main/*.conf
 
